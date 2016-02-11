@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NServiceBus.EntityFramework.Async", "src\NServiceBus.EntityFramework.Async\NServiceBus.EntityFramework.Async.csproj", "{1860D1B0-6093-421E-89CA-F8FFD73490FA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C575D9B3-DEE2-428D-A388-713966B5F4CD}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE = LICENSE
+		NuGet.config = NuGet.config
+		stylecop.json = stylecop.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{01AE862F-2ADF-4491-8306-62FBC9D6FDB0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{567312F5-D4FE-4EAA-93A3-E20540B74DFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NServiceBus.EntityFramework.Async.Tests", "test\NServiceBus.EntityFramework.Async.Tests\NServiceBus.EntityFramework.Async.Tests.csproj", "{1B2C145E-6FB4-4418-95EC-DE72C293BBFC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1860D1B0-6093-421E-89CA-F8FFD73490FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1860D1B0-6093-421E-89CA-F8FFD73490FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1860D1B0-6093-421E-89CA-F8FFD73490FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1860D1B0-6093-421E-89CA-F8FFD73490FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B2C145E-6FB4-4418-95EC-DE72C293BBFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B2C145E-6FB4-4418-95EC-DE72C293BBFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B2C145E-6FB4-4418-95EC-DE72C293BBFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B2C145E-6FB4-4418-95EC-DE72C293BBFC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1860D1B0-6093-421E-89CA-F8FFD73490FA} = {01AE862F-2ADF-4491-8306-62FBC9D6FDB0}
+		{1B2C145E-6FB4-4418-95EC-DE72C293BBFC} = {567312F5-D4FE-4EAA-93A3-E20540B74DFC}
+	EndGlobalSection
+EndGlobal
