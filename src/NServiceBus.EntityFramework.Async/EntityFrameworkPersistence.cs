@@ -4,8 +4,9 @@
 
 namespace NServiceBus.EntityFramework.Async
 {
-    using System;
     using Persistence;
+    using NServiceBus.Features;
+    using Features;
 
     /// <summary>
     /// Entry point for Entity Framework persistence.
@@ -17,7 +18,11 @@ namespace NServiceBus.EntityFramework.Async
         /// </summary>
         public EntityFrameworkPersistence()
         {
-            throw new NotImplementedException();
+            this.Supports<StorageType.GatewayDeduplication>(s => s.EnableFeatureByDefault<EntityFrameworkGatewayPersistence>());
+            this.Supports<StorageType.Outbox>(s => s.EnableFeatureByDefault<EntityFrameworkOutboxPersistence>());
+            this.Supports<StorageType.Sagas>(s => s.EnableFeatureByDefault<EntityFrameworkSagaPersistence>());
+            this.Supports<StorageType.Subscriptions>(s => s.EnableFeatureByDefault<EntityFrameworkSubscriptionPersistence>());
+            this.Supports<StorageType.Timeouts>(s => s.EnableFeatureByDefault<EntityFrameworkTimeoutPersistence>());
         }
     }
 }
