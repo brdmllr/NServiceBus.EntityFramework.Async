@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>Brad M. Miller</authors>
+    <owners>Brad M. Miller</owners>
+    <licenseUrl>https://raw.githubusercontent.com/brdmllr/NServiceBus.EntityFramework.Async/develop/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/brdmllr/NServiceBus.EntityFramework.Async</projectUrl>
+    <!--<iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>-->
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>Initial NuGet package creation. Note that this version does not provide any functionality.</releaseNotes>
+    <copyright>Copyright 2016 Brad M. Miller</copyright>
+    <tags>nservicebus entityframework</tags>
+  </metadata>
+</package>
